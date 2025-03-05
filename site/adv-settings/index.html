@@ -1,0 +1,1715 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../calibration/">
+      
+      
+        <link rel="next" href="../communication-settings/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>Advanced Settings - Scale Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.8608ea7d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#032-ad-conversion-speed" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Scale Documentation" class="md-header__button md-logo" aria-label="Scale Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Scale Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Advanced Settings
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Scale Documentation" class="md-nav__button md-logo" aria-label="Scale Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Scale Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../status/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    System Status
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basic-config/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic Configuration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../calibration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Calibration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Advanced Settings
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Advanced Settings
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#032-ad-conversion-speed" class="md-nav__link">
+    <span class="md-ellipsis">
+      032 AD conversion speed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#034-filter-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      034 Filter types
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#035-baud-intensity" class="md-nav__link">
+    <span class="md-ellipsis">
+      035 baud intensity
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#093-manual-zeroing-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      093 Manual zeroing range
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#094-perform-manual-zeroing" class="md-nav__link">
+    <span class="md-ellipsis">
+      094 Perform manual zeroing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#095-power-on-zero-setting-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      095 Power-on zero setting range
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#096-setting-the-automatic-zero-tracking-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      096 Setting the automatic zero tracking range
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#097-setting-the-automatic-zero-tracking-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      097 Setting the automatic zero tracking time
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#098-stabilization-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      098 Stabilization range
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#099-stabilization-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      099 Stabilization time
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#100-zero-point-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      100 Zero Point Range
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#102-creep-tracking-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      102 Creep tracking range
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#103-creep-tracking-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      103 Creep tracking time
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#104-weight-units" class="md-nav__link">
+    <span class="md-ellipsis">
+      104 Weight units
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#036-15-code-value-within-zero-point" class="md-nav__link">
+    <span class="md-ellipsis">
+      036 15 Code value within zero point
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#061-number-of-multipoint-amendments" class="md-nav__link">
+    <span class="md-ellipsis">
+      061 Number of multipoint amendments
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#062-nth-point-internal-code-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      062 Nth point internal code value
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#064-point-n-weight-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      064 Point N weight value
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#066-insert-correction" class="md-nav__link">
+    <span class="md-ellipsis">
+      066 Insert correction
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../communication-settings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Communication Settings
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#032-ad-conversion-speed" class="md-nav__link">
+    <span class="md-ellipsis">
+      032 AD conversion speed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#034-filter-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      034 Filter types
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#035-baud-intensity" class="md-nav__link">
+    <span class="md-ellipsis">
+      035 baud intensity
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#093-manual-zeroing-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      093 Manual zeroing range
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#094-perform-manual-zeroing" class="md-nav__link">
+    <span class="md-ellipsis">
+      094 Perform manual zeroing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#095-power-on-zero-setting-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      095 Power-on zero setting range
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#096-setting-the-automatic-zero-tracking-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      096 Setting the automatic zero tracking range
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#097-setting-the-automatic-zero-tracking-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      097 Setting the automatic zero tracking time
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#098-stabilization-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      098 Stabilization range
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#099-stabilization-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      099 Stabilization time
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#100-zero-point-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      100 Zero Point Range
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#102-creep-tracking-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      102 Creep tracking range
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#103-creep-tracking-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      103 Creep tracking time
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#104-weight-units" class="md-nav__link">
+    <span class="md-ellipsis">
+      104 Weight units
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#036-15-code-value-within-zero-point" class="md-nav__link">
+    <span class="md-ellipsis">
+      036 15 Code value within zero point
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#061-number-of-multipoint-amendments" class="md-nav__link">
+    <span class="md-ellipsis">
+      061 Number of multipoint amendments
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#062-nth-point-internal-code-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      062 Nth point internal code value
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#064-point-n-weight-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      064 Point N weight value
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#066-insert-correction" class="md-nav__link">
+    <span class="md-ellipsis">
+      066 Insert correction
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Advanced Settings</h1>
+
+<h2 id="032-ad-conversion-speed"><code>032</code> AD conversion speed</h2>
+<p>The default AD conversion speeds of different versions of transmitters are different, the high speed version AD conversion speed is 0x07:800, the medium speed version is 0x04:120, and the low speed version is 0x02:640, take the low speed version as an example, when the default speed 0x02:640 is changed to 0x03:1280</p>
+<p><strong>Command:</strong> <code>01 10 00 20 00 01 02 00 02 20 F1</code></p>
+<table>
+<thead>
+<tr>
+<th>module address</th>
+<th>function code</th>
+<th>Register Starting Address</th>
+<th>Number of registers</th>
+<th>byte count</th>
+<th>register data</th>
+<th>CRC16 checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>10</td>
+<td>00                         20</td>
+<td>00                   01</td>
+<td>02</td>
+<td>00             02</td>
+<td>20              F1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Return data:</strong> <code>01 10 00 20 00 01 00 03</code></p>
+<table>
+<thead>
+<tr>
+<th>module address</th>
+<th>function code</th>
+<th>Register Starting Address</th>
+<th>Number of registers</th>
+<th>CRC16 checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>10</td>
+<td>00                         20</td>
+<td>00                   01</td>
+<td>00              03</td>
+</tr>
+</tbody>
+</table>
+<p>The conversion of analog signals to digital signals, referred to as AD conversion, the faster the AD conversion, the lower the sampling accuracy.</p>
+<p>The AD sampling rate is the detection speed of the weighing equipment for the weight of the items on the platform, usually between a few times per second to several hundred times, high-speed weighing applications, up to several thousand times, for an established weighing equipment, the faster the AD rate, the worse the accuracy of the data detected by the AD will be, and the slower the rate of the AD, the higher the accuracy of the AD detection will be relative. Therefore, according to the real weighing needs on the rate, reasonable choice can meet the needs of the lowest gear rate for AD sampling, can maximize the detection accuracy, so as to achieve the best balance on the speed and accuracy.</p>
+<h2 id="034-filter-types"><code>034</code> Filter types</h2>
+<p>Default is 09: Sliding Average Filtering+ First Order Filtering, change to 08: Median Filtering+ First Order Filtering when <strong>Command:</strong> <code>01 10 00 22 00 01 02 00 08 A1 14</code></p>
+<table>
+<thead>
+<tr>
+<th>module address</th>
+<th>function code</th>
+<th>Register Starting Address</th>
+<th>Number of registers</th>
+<th>byte count</th>
+<th>register data</th>
+<th>CRC16 checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>10</td>
+<td>00                         22</td>
+<td>00                   01</td>
+<td>02</td>
+<td>00             08</td>
+<td>A1              14</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Return data:</strong> <code>01 10 00 22 00 01 A1 C3</code></p>
+<table>
+<thead>
+<tr>
+<th>module address</th>
+<th>function code</th>
+<th>Register Starting Address</th>
+<th>Number of registers</th>
+<th>CRC16 checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>10</td>
+<td>00                         22</td>
+<td>00                   01</td>
+<td>A1              C3</td>
+</tr>
+</tbody>
+</table>
+<p>Select the appropriate filtering method according to different applications</p>
+<pre><code>0x00:Not used 0x01:Mean value filtering  
+0x02:Median Filter 0x03:First Order Filter  
+0x04:Sliding average filter 0x05:Median value average filter  
+0x06:Sliding Median Filter  
+0x07:Mean filter + First order filter  
+0x08:Median Filter + First Order Filter  
+0x09:Sliding Average Filter + First Order Filter  
+0x0A:median mean filter + first order filter
+</code></pre>
+<h2 id="035-baud-intensity"><code>035</code> baud intensity</h2>
+<p>When baud strength is changed to 10</p>
+<p><strong>Command:</strong> <code>01 10 00 23 00 01 02 00 10 A0 CF</code></p>
+<table>
+<thead>
+<tr>
+<th>module address</th>
+<th>function code</th>
+<th>Register Starting Address</th>
+<th>Number of registers</th>
+<th>byte count</th>
+<th>register data</th>
+<th>CRC16 checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>10</td>
+<td>00                         23</td>
+<td>00                   01</td>
+<td>02</td>
+<td>00             10</td>
+<td>A0              CF</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Return data:</strong> <code>01 10 00 23 00 01 F0 03</code></p>
+<table>
+<thead>
+<tr>
+<th>module address</th>
+<th>function code</th>
+<th>Register Starting Address</th>
+<th>Number of registers</th>
+<th>CRC16 checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>10</td>
+<td>00                         23</td>
+<td>00                   01</td>
+<td>F0              03</td>
+</tr>
+</tbody>
+</table>
+<p>Range: 0\~50, the larger the number, the stronger the filtering</p>
+<p>Filter strength: AD sampling data, due to a variety of reasons, often mixed with a variety of noise from different reasons in which, in order to get a weighing data as close as possible to the real weighing data, weighing equipment will be used in the way of digital filtering data signal processing, and the AD filter strength is an important parameter of the data processing, in general, the smaller the filter strength, the faster the response speed of the data output signal, but the effect of noise filtering is also worse; while the larger the filter strength, the slower the response speed of the output signal, but the effect of noise filtering will be better, between the response speed and filtering effect is reasonable. Generally speaking, the smaller the filter strength, the faster the response of the data output signal, but the worse the effect of noise filtering; and the larger the filter strength, the slower the response of the output signal, but for the effect of noise filtering will be the better, between the response speed and filtering effect, reasonable trade-offs, looking for the optimal balance point, is to use a good weighing equipment is a key step, there is no definite standard, the need for users to do a trade-off based on the site, whether it is the speed priority, or stability priority, according to the customer\'s actual situation, or the stability priority, according to the customer\'s actual situation. There is no definite standard, users need to make a trade-off according to the site conditions, whether it is speed priority, or stability priority, according to the actual needs of customers.</p>
+<h2 id="093-manual-zeroing-range"><code>093</code> Manual zeroing range</h2>
+<p><strong>Command:</strong> <code>01 10 00 5D 00 01 02 00 0A 2B 1A</code> (set 10%)</p>
+<table>
+<thead>
+<tr>
+<th>module address</th>
+<th>function code</th>
+<th>Register Starting Address</th>
+<th>Number of registers</th>
+<th>byte count</th>
+<th>register data</th>
+<th>CRC16 checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>10</td>
+<td>00                         5D</td>
+<td>00                   01</td>
+<td>02</td>
+<td>00             0A</td>
+<td>2B              1A</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Return data:</strong> <code>01 10 00 5D 00 01 90 1B</code></p>
+<table>
+<thead>
+<tr>
+<th>module address</th>
+<th>function code</th>
+<th>Register Starting Address</th>
+<th>Number of registers</th>
+<th>CRC16 checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>10</td>
+<td>00                         5D</td>
+<td>00                   01</td>
+<td>90              1B</td>
+</tr>
+</tbody>
+</table>
+<p>Manual zero setting is to allow the weighing equipment to take the current weighing data as the current zero point through external keys or commands. As long as the current weighing value does not exceed the range of manual zero setting, the weighing equipment will show the zero reset immediately when the manual zero setting is executed.</p>
+<h2 id="094-perform-manual-zeroing"><code>094</code> Perform manual zeroing</h2>
+<p><strong>Command:</strong> <code>01 10 00 5E 00 01 02 00 01 6A EE</code></p>
+<table>
+<thead>
+<tr>
+<th>module address</th>
+<th>function code</th>
+<th>Register Starting Address</th>
+<th>Number of registers</th>
+<th>byte count</th>
+<th>register data</th>
+<th>CRC16 checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>10</td>
+<td>00                         5E</td>
+<td>00                   01</td>
+<td>02</td>
+<td>00             01</td>
+<td>6A              EE</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Return data:</strong> <code>01 10 00 5E 00 01 60 1B</code></p>
+<table>
+<thead>
+<tr>
+<th>module address</th>
+<th>function code</th>
+<th>Register Starting Address</th>
+<th>Number of registers</th>
+<th>CRC16 checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>10</td>
+<td>00                         5E</td>
+<td>00                   01</td>
+<td>60              1B</td>
+</tr>
+</tbody>
+</table>
+<p>When multiple channels of transmitters are zeroed simultaneously, the command is <code>01 10 00 5E 00 01 02 00 FF EB 6E</code></p>
+<h2 id="095-power-on-zero-setting-range"><code>095</code> Power-on zero setting range</h2>
+<p><strong>Command:</strong> <code>01 10 00 5F 00 01 02 00 0A 2A F8</code> (set 10%)</p>
+<table>
+<thead>
+<tr>
+<th>module address</th>
+<th>function code</th>
+<th>Register Starting Address</th>
+<th>Number of registers</th>
+<th>byte count</th>
+<th>register data</th>
+<th>CRC16 checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>10</td>
+<td>00                         5F</td>
+<td>00                   01</td>
+<td>02</td>
+<td>00             0A</td>
+<td>2A              F8</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Return data:</strong> <code>01 10 00 5F 00 01 31 DB</code></p>
+<table>
+<thead>
+<tr>
+<th>module address</th>
+<th>function code</th>
+<th>Register Starting Address</th>
+<th>Number of registers</th>
+<th>CRC16 checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>10</td>
+<td>00                         5F</td>
+<td>00                   01</td>
+<td>31              DB</td>
+</tr>
+</tbody>
+</table>
+<h2 id="096-setting-the-automatic-zero-tracking-range"><code>096</code> Setting the automatic zero tracking range</h2>
+<p><strong>Command:</strong> <code>01 10 00 60 00 01 02 00 64 AE 1B</code> (when 10d is set)</p>
+<table>
+<thead>
+<tr>
+<th>module address</th>
+<th>function code</th>
+<th>Register Starting Address</th>
+<th>Number of registers</th>
+<th>byte count</th>
+<th>register data</th>
+<th>CRC16 checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>10</td>
+<td>00                         60</td>
+<td>00                   01</td>
+<td>02</td>
+<td>00             64</td>
+<td>AE              1B</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Return data:</strong> <code>01 10 00 60 00 01 01 D7</code></p>
+<table>
+<thead>
+<tr>
+<th>module address</th>
+<th>function code</th>
+<th>Register Starting Address</th>
+<th>Number of registers</th>
+<th>CRC16 checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>10</td>
+<td>00                         60</td>
+<td>00                   01</td>
+<td>01              D7</td>
+</tr>
+</tbody>
+</table>
+<p>Parameter range: 0\~10000; unit: 0.1d; zero tracking function is turned off when setting 0</p>
+<p>When the weighing equipment is turned on and in use, the AD signal output will drift because of various reasons such as AD temperature drift, sensor temperature drift creep, etc. The zero tracking calibration program in the equipment will automatically track this very slow drift to offset it, but the zero tracking method has a speed and range.</p>
+<h2 id="097-setting-the-automatic-zero-tracking-time"><code>097</code> Setting the automatic zero tracking time</h2>
+<p><strong>Command:</strong> <code>01 10 00 61 00 01 02 00 0A 2E 26</code> (when setting 1s)</p>
+<table>
+<thead>
+<tr>
+<th>module address</th>
+<th>function code</th>
+<th>Register Starting Address</th>
+<th>Number of registers</th>
+<th>byte count</th>
+<th>register data</th>
+<th>CRC16 checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>10</td>
+<td>00                         61</td>
+<td>00                   01</td>
+<td>02</td>
+<td>00             0A</td>
+<td>2E              26</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Return data:</strong> <code>01 10 00 61 00 01 50 17</code></p>
+<table>
+<thead>
+<tr>
+<th>module address</th>
+<th>function code</th>
+<th>Register Starting Address</th>
+<th>Number of registers</th>
+<th>CRC16 checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>10</td>
+<td>00                         61</td>
+<td>00                   01</td>
+<td>50              17</td>
+</tr>
+</tbody>
+</table>
+<h2 id="098-stabilization-range"><code>098</code> Stabilization range</h2>
+<p><strong>Command:</strong> <code>01 10 00 62 00 01 02 00 0A 2E 15</code> (when 10d is set)</p>
+<table>
+<thead>
+<tr>
+<th>module address</th>
+<th>function code</th>
+<th>Register Starting Address</th>
+<th>Number of registers</th>
+<th>byte count</th>
+<th>register data</th>
+<th>CRC16 checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>10</td>
+<td>00                         62</td>
+<td>00                   01</td>
+<td>02</td>
+<td>00             0A</td>
+<td>2E              15</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Return data:</strong> <code>01 10 00 62 00 01 A0 17</code></p>
+<table>
+<thead>
+<tr>
+<th>module address</th>
+<th>function code</th>
+<th>Register Starting Address</th>
+<th>Number of registers</th>
+<th>CRC16 checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>10</td>
+<td>00                         62</td>
+<td>00                   01</td>
+<td>A0              17</td>
+</tr>
+</tbody>
+</table>
+<h2 id="099-stabilization-time"><code>099</code> Stabilization time</h2>
+<p><strong>Command:</strong> <code>01 10 00 63 00 01 02 00 0A 2F C4</code> (when setting 1s)</p>
+<table>
+<thead>
+<tr>
+<th>module address</th>
+<th>function code</th>
+<th>Register Starting Address</th>
+<th>Number of registers</th>
+<th>byte count</th>
+<th>register data</th>
+<th>CRC16 checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>10</td>
+<td>00                         63</td>
+<td>00                   01</td>
+<td>02</td>
+<td>00             0A</td>
+<td>2F              C4</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Return data:</strong> <code>01 10 00 63 00 01 F1 D7</code></p>
+<table>
+<thead>
+<tr>
+<th>module address</th>
+<th>function code</th>
+<th>Register Starting Address</th>
+<th>Number of registers</th>
+<th>CRC16 checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>10</td>
+<td>00                         63</td>
+<td>00                   01</td>
+<td>F1              D7</td>
+</tr>
+</tbody>
+</table>
+<h2 id="100-zero-point-range"><code>100</code> Zero Point Range</h2>
+<p><strong>Command:</strong> <code>01 10 00 64 00 02 04 00 00 00 0A 74 73</code> (when 10 is
+set)</p>
+<table>
+<thead>
+<tr>
+<th>module address</th>
+<th>function code</th>
+<th>Register Starting Address</th>
+<th>Number of registers</th>
+<th>byte count</th>
+<th>register data</th>
+<th>CRC16 checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>10</td>
+<td>00                         64</td>
+<td>00                   02</td>
+<td>04</td>
+<td>00             0A</td>
+<td>74              73</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Return data:</strong> <code>01 10 00 64 00 02 00 17</code></p>
+<table>
+<thead>
+<tr>
+<th>module address</th>
+<th>function code</th>
+<th>Register Starting Address</th>
+<th>Number of registers</th>
+<th>CRC16 checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>10</td>
+<td>00                         64</td>
+<td>00                   02</td>
+<td>00              17</td>
+</tr>
+</tbody>
+</table>
+<h2 id="102-creep-tracking-range"><code>102</code> Creep tracking range</h2>
+<p><strong>Command:</strong> <code>01 10 00 66 00 01 02 00 64 AE 7D</code> (when 10d is set)</p>
+<table>
+<thead>
+<tr>
+<th>module address</th>
+<th>function code</th>
+<th>Register Starting Address</th>
+<th>Number of registers</th>
+<th>byte count</th>
+<th>register data</th>
+<th>CRC16 checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>10</td>
+<td>00                         66</td>
+<td>00                   01</td>
+<td>02</td>
+<td>00             64</td>
+<td>AE              7D</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Return data:</strong> <code>01 10 00 66 00 01 E1 D6</code></p>
+<table>
+<thead>
+<tr>
+<th>module address</th>
+<th>function code</th>
+<th>Register Starting Address</th>
+<th>Number of registers</th>
+<th>CRC16 checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>10</td>
+<td>00                         66</td>
+<td>00                   01</td>
+<td>E1              D6</td>
+</tr>
+</tbody>
+</table>
+<h2 id="103-creep-tracking-time"><code>103</code> Creep tracking time</h2>
+<p><strong>Command:</strong> <code>01 10 00 67 00 01 02 00 0A 2E 40</code> (when setting 1s)</p>
+<table>
+<thead>
+<tr>
+<th>module address</th>
+<th>function code</th>
+<th>Register Starting Address</th>
+<th>Number of registers</th>
+<th>byte count</th>
+<th>register data</th>
+<th>CRC16 checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>10</td>
+<td>00                         67</td>
+<td>00                   01</td>
+<td>02</td>
+<td>00             0A</td>
+<td>2E              40</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Return data:</strong> <code>01 10 00 67 00 01 B0 16</code></p>
+<table>
+<thead>
+<tr>
+<th>module address</th>
+<th>function code</th>
+<th>Register Starting Address</th>
+<th>Number of registers</th>
+<th>CRC16 checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>10</td>
+<td>00                         67</td>
+<td>00                   01</td>
+<td>B0              16</td>
+</tr>
+</tbody>
+</table>
+<h2 id="104-weight-units"><code>104</code> Weight units</h2>
+<p><strong>Command:</strong> <code>01 10 00 68 00 01 02 00 01 6F 78</code> (when setting 1-g)</p>
+<table>
+<thead>
+<tr>
+<th>module address</th>
+<th>function code</th>
+<th>Register Starting Address</th>
+<th>Number of registers</th>
+<th>byte count</th>
+<th>register data</th>
+<th>CRC16 checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>10</td>
+<td>00                         68</td>
+<td>00                   01</td>
+<td>02</td>
+<td>00             01</td>
+<td>6F              78</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Return data:</strong> <code>01 10 00 68 00 01 80 15</code></p>
+<table>
+<thead>
+<tr>
+<th>module address</th>
+<th>function code</th>
+<th>Register Starting Address</th>
+<th>Number of registers</th>
+<th>CRC16 checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>10</td>
+<td>00                         68</td>
+<td>00                   01</td>
+<td>80              15</td>
+</tr>
+</tbody>
+</table>
+<h2 id="036-15-code-value-within-zero-point"><code>036</code> 15 Code value within zero point</h2>
+<p><strong>Command:</strong> <code>01 10 00 24 00 02 04 7F FF FF FF FF 10 D8</code></p>
+<table>
+<thead>
+<tr>
+<th>module address</th>
+<th>function code</th>
+<th>Register Starting Address</th>
+<th>Number of registers</th>
+<th>byte count</th>
+<th>High 16-bit register data</th>
+<th>Low 16-bit register data</th>
+<th>CRC16 checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>10</td>
+<td>00                         24</td>
+<td>00                   02</td>
+<td>04</td>
+<td>7F                         FF</td>
+<td>FF                        FF</td>
+<td>10              D8</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Return data:</strong> <code>01 10 00 24 00 02 01 C3</code></p>
+<table>
+<thead>
+<tr>
+<th>module address</th>
+<th>function code</th>
+<th>Register Starting Address</th>
+<th>Number of registers</th>
+<th>CRC16 checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>10</td>
+<td>00                         24</td>
+<td>00                   02</td>
+<td>01              C3</td>
+</tr>
+</tbody>
+</table>
+<p>AD internal code value corresponding to zero point;
+range:-8000000\~8000000<br />
+Write:0x7fffffff to set the current internal code to the zero internal
+code</p>
+<p>The zero point is the reference point for weighing, and the weight added or subtracted from this reference point is the actual weighed weight. Zero point calibration, as the name suggests, is a zero point recorded as a benchmark during calibration, and then the weight calibration done on this basis.</p>
+<h2 id="061-number-of-multipoint-amendments"><code>061</code> Number of multipoint amendments</h2>
+<p><strong>Command:</strong> <code>01 03 00 3D 00 01 15 C6</code></p>
+<table>
+<thead>
+<tr>
+<th>module address</th>
+<th>function code</th>
+<th>Register Starting Address</th>
+<th>Number of registers</th>
+<th>CRC16 checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>03</td>
+<td>00                         3D</td>
+<td>00                   01</td>
+<td>15              C6</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Return data:</strong> <code>01 03 02 00 00 B8 44</code></p>
+<table>
+<thead>
+<tr>
+<th>module address</th>
+<th>function code</th>
+<th>byte count</th>
+<th>register data</th>
+<th>CRC16 checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>03</td>
+<td>02</td>
+<td>00             00</td>
+<td>B4              44</td>
+</tr>
+</tbody>
+</table>
+<p>This register is read-only. Reading this register returns the number of
+internal multipoint corrections; writing this register is invalid.</p>
+<h2 id="062-nth-point-internal-code-value"><code>062</code> Nth point internal code value</h2>
+<p><strong>Command:</strong> <code>01 10 00 3E 00 02 04 7F FF FF FF FF 59 63</code></p>
+<table>
+<thead>
+<tr>
+<th>module address</th>
+<th>function code</th>
+<th>Register Starting Address</th>
+<th>Number of registers</th>
+<th>byte count</th>
+<th>High 16-bit register data</th>
+<th>Low 16-bit register data</th>
+<th>CRC16 checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>10</td>
+<td>00                         3E</td>
+<td>00                   02</td>
+<td>04</td>
+<td>7F                         FF</td>
+<td>FF                        FF</td>
+<td>59              63</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Return data:</strong> <code>01 10 00 3E 00 02 20 04</code></p>
+<table>
+<thead>
+<tr>
+<th>module address</th>
+<th>function code</th>
+<th>Register Starting Address</th>
+<th>Number of registers</th>
+<th>CRC16 checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>10</td>
+<td>00                         3E</td>
+<td>00                   02</td>
+<td>20              04</td>
+</tr>
+</tbody>
+</table>
+<p>The value of AD internal code corresponding to the Nth point;
+Range:-8000000\~8000000; If 0x7fffffff is written to this register, it
+will be replaced by the current AD internal code value;</p>
+<h2 id="064-point-n-weight-value"><code>064</code> Point N weight value</h2>
+<p><strong>Command:</strong> <code>01 10 00 40 00 02 04 00 01 00 00 A6 5F</code></p>
+<table>
+<thead>
+<tr>
+<th>module address</th>
+<th>function code</th>
+<th>Register Starting Address</th>
+<th>Number of registers</th>
+<th>byte count</th>
+<th>High 16-bit register data</th>
+<th>Low 16-bit register data</th>
+<th>CRC16 checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>10</td>
+<td>00                         40</td>
+<td>00                   02</td>
+<td>04</td>
+<td>00                         01</td>
+<td>00                        02</td>
+<td>A6              5F</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Return data:</strong> <code>01 10 00 40 00 02 40 1C</code></p>
+<table>
+<thead>
+<tr>
+<th>module address</th>
+<th>function code</th>
+<th>Register Starting Address</th>
+<th>Number of registers</th>
+<th>CRC16 checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>10</td>
+<td>00                         40</td>
+<td>00                   02</td>
+<td>40              1C</td>
+</tr>
+</tbody>
+</table>
+<p>Measured value corresponding to the Nth point; Range: -8000000\~8000000.</p>
+<h2 id="066-insert-correction"><code>066</code> Insert correction</h2>
+<p><strong>Command:</strong> <code>01 10 00 42 00 01 02 00 01 68 B2</code></p>
+<table>
+<thead>
+<tr>
+<th>module address</th>
+<th>function code</th>
+<th>Register Starting Address</th>
+<th>Number of registers</th>
+<th>byte count</th>
+<th>High 16-bit register data</th>
+<th>CRC16 checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>10</td>
+<td>00                         42</td>
+<td>00                   01</td>
+<td>02</td>
+<td>00                         01</td>
+<td>68              B2</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Return data:</strong> <code>01 10 00 42 00 01 A1 DD</code></p>
+<table>
+<thead>
+<tr>
+<th>module address</th>
+<th>function code</th>
+<th>Register Starting Address</th>
+<th>Number of registers</th>
+<th>CRC16 checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>10</td>
+<td>00                         42</td>
+<td>00                   01</td>
+<td>A1              DD</td>
+</tr>
+</tbody>
+</table>
+<p>First write the AD internal code into the Nth point internal code value register; then write the Nth point weight value to the register; then write 0x01 to this register, the module will insert the data into the internal multi-point correction data table; the data table supports a maximum of 50 points (economy type is 10 points), the register is write-only; read return 0</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>
