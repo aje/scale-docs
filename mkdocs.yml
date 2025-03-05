@@ -1,0 +1,12 @@
+site_name: Scale Documentation
+nav:
+  - Home: index.md
+  - System Status: status.md
+  - Basic Configuration: basic-config.md
+  - Calibration: calibration.md
+  - Advanced Settings: adv-settings.md
+  - Communication Settings: communication-settings.md
+theme:
+  name: material
+plugins:
+  - search
