@@ -1,4 +1,5 @@
 site_name: 我的多语言文档
+site_url: "https://aje.github.io/scale-docs/zh/"
 
 theme:
   name: material
@@ -49,8 +50,8 @@ nav:
 extra:
   alternate:
     - name: English
-      link: /
+      link: /scale-docs/
       lang: en
     - name: 中文
-      link: /zh/
+      link: /scale-docs/zh/
       lang: zh

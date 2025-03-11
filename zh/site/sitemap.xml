@@ -1,3 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://aje.github.io/scale-docs/zh/</loc>
+         <lastmod>2025-03-11</lastmod>
+    </url>
+    <url>
+         <loc>https://aje.github.io/scale-docs/zh/adv-settings/</loc>
+         <lastmod>2025-03-11</lastmod>
+    </url>
+    <url>
+         <loc>https://aje.github.io/scale-docs/zh/basic-config/</loc>
+         <lastmod>2025-03-11</lastmod>
+    </url>
+    <url>
+         <loc>https://aje.github.io/scale-docs/zh/calibration/</loc>
+         <lastmod>2025-03-11</lastmod>
+    </url>
+    <url>
+         <loc>https://aje.github.io/scale-docs/zh/communication-settings/</loc>
+         <lastmod>2025-03-11</lastmod>
+    </url>
+    <url>
+         <loc>https://aje.github.io/scale-docs/zh/status/</loc>
+         <lastmod>2025-03-11</lastmod>
+    </url>
 </urlset>
