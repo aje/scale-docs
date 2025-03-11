@@ -1,18 +1,6 @@
 
-## `008` Module status
-```
-Bit15\-\--Bit12:All 0 Bit11:0 Peak Not Detected/1 Detected
+## `08` Module status
 
-Bit10:0 valley not detected/1 detected Bit9:0 normal/overload (V1.3)
-
-Bit8:0 General/1 Smart Sensor Bit7:0 Non-Zero/1 Zero
-
-Bit6:0 normal/1 overflow Bit5:0 stable/1 unstable
-
-Bit4:0 power on not cleared/1 power on cleared
-
-Bit3:0 plus sign/1 minus sign Bit2-0:Decimal point position
-```
 (Supported by V1.1 firmware and above)
 
 **Command:** `01 03 00 08 00 01 05 C8`
@@ -29,13 +17,25 @@ Bit3:0 plus sign/1 minus sign Bit2-0:Decimal point position
 
 The return data is 0802, 0802 is hexadecimal data, convert 0802 to binary, the data obtained is 0000100000000010.
 
-|                     | Bit15-Bit12 | Bit11   | Bit10               | Bit9     | Bit8    | Bit7     | Bit6     | Bit5      | Bit4                 | Bit3                          | Bit2-0           |
-|---------------------|-------------|---------|---------------------|----------|---------|----------|----------|-----------|----------------------|-------------------------------|------------------|
-| binary data         | 0000        | 1       | 0                   | 0        | 0       | 0        | 0        | 0         | 0                    | 0                             | 010              |
-| decimal system      | 0000        | 1       | 0                   | 0        | 0       | 0        | 0        | 0         | 0                    | 0                             | 2                |
-| corresponding state |             | sensing | Trough not detected | normalcy | routine | non-zero | normalcy | stabilise | Power on not cleared | positive value sign + (math.) | 2 decimal places |
+|                     | Bit15-Bit12 | Bit2-0           |
+|---------------------|-------------|------------------|
+| binary data         | 0000        | 010              |
+| decimal system      | 0000        | 2                |
+| corresponding state |             | 2 decimal places |
 
-## `030` Reading the measured value
+| bit   | description | 0                      | 1                |
+|-------|-------------|------------------------|------------------| 
+| 11    | sensing     | Peak Not Detected      | Detected         |
+| 10    | Trough      | valley not detected    | detected         |
+| 9     | normalcy    | normal                 | overload (V1.3)  |
+| 8     | routine     | General                | Smart Sensor     |
+| 7     | zero        | Non-Zero               | Zero             |
+| 6     | overflow    | normal                 | overflow         |
+| 5     | stabilise   | stable                 | unstable         |
+| 4     | Power       | power on not cleared   | power on cleared |
+| 3     | positive    | plus sign              | minus sign       | 
+
+## `30` Reading the measured value
 
 **Command:** `01 03 00 1E 00 02 A4 0D`
 
@@ -53,7 +53,7 @@ actual situation)
 The measured value is the AD internal code value calibrated and
 converted by zero and gain.
 
-## `044` Reading AD internal code
+## `44` Reading AD internal code
 
 **Command:** `01 03 00 2C 00 02 05 C2`
 
@@ -70,7 +70,7 @@ actual situation)
 
 The module returns the current AD internal code value to the host.
 
-## `080` Reading of weights/measurements
+## `80` Reading of weights/measurements
 
 **Command:** `01 03 00 50 00 02 C4 1A`
 
@@ -85,7 +85,7 @@ the actual situation)
 |----------------|---------------|------------|--------------------------------|-------------------------------|---------------------|
 | 01             | 03            | 04         | 00                         00  | 00                        84  | FA              50  |
 
-## `082` Net weight reading
+## `82` Net weight reading
 
 **Command:** `01 03 00 52 00 02 65 DA`
 

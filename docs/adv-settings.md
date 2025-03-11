@@ -1,5 +1,5 @@
 
-## `032` AD conversion speed 
+## `32` AD conversion speed 
 
 The default AD conversion speeds of different versions of transmitters are different, the high speed version AD conversion speed is 0x07:800, the medium speed version is 0x04:120, and the low speed version is 0x02:640, take the low speed version as an example, when the default speed 0x02:640 is changed to 0x03:1280
 
@@ -19,7 +19,7 @@ The conversion of analog signals to digital signals, referred to as AD conversio
 
 The AD sampling rate is the detection speed of the weighing equipment for the weight of the items on the platform, usually between a few times per second to several hundred times, high-speed weighing applications, up to several thousand times, for an established weighing equipment, the faster the AD rate, the worse the accuracy of the data detected by the AD will be, and the slower the rate of the AD, the higher the accuracy of the AD detection will be relative. Therefore, according to the real weighing needs on the rate, reasonable choice can meet the needs of the lowest gear rate for AD sampling, can maximize the detection accuracy, so as to achieve the best balance on the speed and accuracy.
 
-## `034` Filter types 
+## `34` Filter types 
 
 Default is 09: Sliding Average Filtering+ First Order Filtering, change to 08: Median Filtering+ First Order Filtering when **Command:** `01 10 00 22 00 01 02 00 08 A1 14`
 
@@ -45,7 +45,7 @@ Select the appropriate filtering method according to different applications
 0x0A:median mean filter + first order filter
 ```
 
-## `035` baud intensity 
+## `35` baud intensity 
 
 When baud strength is changed to 10
 
@@ -68,7 +68,7 @@ Filter strength: AD sampling data, due to a variety of reasons, often mixed with
 
 
 
-## `093` Manual zeroing range 
+## `93` Manual zeroing range 
 
 **Command:** `01 10 00 5D 00 01 02 00 0A 2B 1A` (set 10%)
 
@@ -84,7 +84,7 @@ Filter strength: AD sampling data, due to a variety of reasons, often mixed with
 
 Manual zero setting is to allow the weighing equipment to take the current weighing data as the current zero point through external keys or commands. As long as the current weighing value does not exceed the range of manual zero setting, the weighing equipment will show the zero reset immediately when the manual zero setting is executed.
 
-## `094` Perform manual zeroing 
+## `94` Perform manual zeroing 
 
 **Command:** `01 10 00 5E 00 01 02 00 01 6A EE`
 
@@ -100,7 +100,7 @@ Manual zero setting is to allow the weighing equipment to take the current weigh
 
 When multiple channels of transmitters are zeroed simultaneously, the command is `01 10 00 5E 00 01 02 00 FF EB 6E`
 
-## `095` Power-on zero setting range 
+## `95` Power-on zero setting range 
 
 **Command:** `01 10 00 5F 00 01 02 00 0A 2A F8` (set 10%)
 
@@ -114,7 +114,7 @@ When multiple channels of transmitters are zeroed simultaneously, the command is
 |----------------|---------------|--------------------------------|--------------------------|---------------------|
 | 01             | 10            | 00                         5F  | 00                   01  | 31              DB  |
 
-## `096` Setting the automatic zero tracking range 
+## `96` Setting the automatic zero tracking range 
 
 **Command:** `01 10 00 60 00 01 02 00 64 AE 1B` (when 10d is set)
 
@@ -132,7 +132,7 @@ Parameter range: 0\~10000; unit: 0.1d; zero tracking function is turned off when
 
 When the weighing equipment is turned on and in use, the AD signal output will drift because of various reasons such as AD temperature drift, sensor temperature drift creep, etc. The zero tracking calibration program in the equipment will automatically track this very slow drift to offset it, but the zero tracking method has a speed and range.
 
-## `097` Setting the automatic zero tracking time 
+## `97` Setting the automatic zero tracking time 
 
 **Command:** `01 10 00 61 00 01 02 00 0A 2E 26` (when setting 1s)
 
@@ -146,7 +146,7 @@ When the weighing equipment is turned on and in use, the AD signal output will d
 |----------------|---------------|--------------------------------|--------------------------|---------------------|
 | 01             | 10            | 00                         61  | 00                   01  | 50              17  |
 
-## `098` Stabilization range 
+## `98` Stabilization range 
 
 **Command:** `01 10 00 62 00 01 02 00 0A 2E 15` (when 10d is set)
 
@@ -160,7 +160,7 @@ When the weighing equipment is turned on and in use, the AD signal output will d
 |----------------|---------------|--------------------------------|--------------------------|---------------------|
 | 01             | 10            | 00                         62  | 00                   01  | A0              17  |
 
-## `099` Stabilization time 
+## `99` Stabilization time 
 
 **Command:** `01 10 00 63 00 01 02 00 0A 2F C4` (when setting 1s)
 
@@ -232,7 +232,7 @@ set)
 | 01             | 10            | 00                         68  | 00                   01  | 80              15  |
 
 
-## `036` 15 Code value within zero point
+## `36` 15 Code value within zero point
 
 **Command:** `01 10 00 24 00 02 04 7F FF FF FF FF 10 D8`
 
@@ -253,7 +253,7 @@ code
 
 The zero point is the reference point for weighing, and the weight added or subtracted from this reference point is the actual weighed weight. Zero point calibration, as the name suggests, is a zero point recorded as a benchmark during calibration, and then the weight calibration done on this basis.
 
-## `061` Number of multipoint amendments
+## `61` Number of multipoint amendments
 
 **Command:** `01 03 00 3D 00 01 15 C6`
 
@@ -270,7 +270,7 @@ The zero point is the reference point for weighing, and the weight added or subt
 This register is read-only. Reading this register returns the number of
 internal multipoint corrections; writing this register is invalid.
 
-## `062` Nth point internal code value
+## `62` Nth point internal code value
 
 **Command:** `01 10 00 3E 00 02 04 7F FF FF FF FF 59 63`
 
@@ -288,7 +288,7 @@ The value of AD internal code corresponding to the Nth point;
 Range:-8000000\~8000000; If 0x7fffffff is written to this register, it
 will be replaced by the current AD internal code value;
 
-## `064` Point N weight value
+## `64` Point N weight value
 
 **Command:** `01 10 00 40 00 02 04 00 01 00 00 A6 5F`
 
@@ -304,7 +304,7 @@ will be replaced by the current AD internal code value;
 
 Measured value corresponding to the Nth point; Range: -8000000\~8000000.
 
-## `066` Insert correction
+## `66` Insert correction
 
 **Command:** `01 10 00 42 00 01 02 00 01 68 B2`
 

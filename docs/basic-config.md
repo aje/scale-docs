@@ -1,5 +1,5 @@
 
-## `000` Module address 
+## `00` Module address 
 
 When 2 or more transmitters/meter are connected to the upper unit, each transmitter/meter must be set to a different address.
 
@@ -16,7 +16,7 @@ When 2 or more transmitters/meter are connected to the upper unit, each transmit
 | 01             | 10            | 00                        00  | 00                  01  | 01              C9  |
 
  
-## `001` Baud rate setting 
+## `01` Baud rate setting 
 
 The default baud rate of the transmitter is 0x03:9600 when it is shipped from the factory, and it is changed to 0x07:115200 with the following input format.
 
@@ -32,7 +32,7 @@ The default baud rate of the transmitter is 0x03:9600 when it is shipped from th
 |----------------|---------------|--------------------------------|--------------------------|---------------------|
 | 01             | 10            | 00                         01  | 00                   01  | 50              09  |
 
-## `002` Data frame format 
+## `02` Data frame format 
 
 The transmitter defaults to the 05 (8 data bits, no parity, 1 stop bit) option format when shipped from the factory, and when modified to the 6 (8 data bits, no parity, 2 stop bits) option
 
@@ -48,7 +48,7 @@ The transmitter defaults to the 05 (8 data bits, no parity, 1 stop bit) option f
 |----------------|---------------|--------------------------------|--------------------------|---------------------|
 | 01             | 10            | 00                         02  | 00                   01  | A0              09  |
 
-## `003` Protocol type setting 
+## `03` Protocol type setting 
 
 Transmitter/instrument default protocol is Modbus RTU, if the protocol is changed to free protocol (unlocked before use)
 
@@ -66,7 +66,7 @@ Transmitter/instrument default protocol is Modbus RTU, if the protocol is change
 
 00 (Free Protocol), 01 (Modbus RTU), 02 (ASCII), **after the protocol type is switched, the previously modified calibration parameters and other modified parameters are retained, but the digital frame format will be restored to the default value.**
 
-## `004` Command response delay setting 
+## `04` Command response delay setting 
 
 When the delay is 10ms, it is converted to 0A in hexadecimal.
 
@@ -84,7 +84,7 @@ When the delay is 10ms, it is converted to 0A in hexadecimal.
 
 The unit is ms, the answer delay is used for RS485 communication, because RS485 is half-duplex, can only send or receive, can not send and receive at the same time. Some hosts are slow to switch between sending and receiving, resulting in the loss of the answer command, so the answer delay time can be reasonably set to avoid the loss of the command.
 
-## `005` Locking/Unlocking System Configuration 
+## `05` Locking/Unlocking System Configuration 
 
 **Command:** `01 10 00 05 00 01 02 5A A5 5C DE`
 
@@ -103,7 +103,7 @@ Including: module address, baud rate, digital frame format, protocol type, resto
 
 ※The transmitter/instrument is locked by default after powering up.
 
-## `006` Firmware version  
+## `06` Firmware version  
 
 Returns the module\'s internal program version number to the host computer, which varies for each transmitter/instrument depending on the model and when it left the factory.
 
@@ -119,7 +119,7 @@ Returns the module\'s internal program version number to the host computer, whic
 |----------------|---------------|------------|--------------------------------|---------------------|
 | 01             | 03            | 02         | 00                         FA  | 38              07  |
 
-## `007` Restoration of factory settings 
+## `07` Restoration of factory settings 
 
 **Command:** `01 10 00 07 00 01 02 00 55 67 D8`
 
